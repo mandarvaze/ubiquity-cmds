@@ -1,4 +1,3 @@
-
 /* Ubiquity command to search Pune Tech Archives */
 CmdUtils.CreateCommand({
   name: "search-pt",
@@ -10,7 +9,7 @@ CmdUtils.CreateCommand({
   help: "how to use your command",
   takes: {"search-term": noun_arb_text},
   preview: function( pblock, input ) {
-/*    var template = "Hello ${name}"; */
+/* var template = "Hello ${name}"; */
     pblock.innerHTML = "Search Pune Tech Archives for " + input.text;
   },
   execute: function(input) {
@@ -18,4 +17,3 @@ CmdUtils.CreateCommand({
         Utils.openUrlInBrowser(url);
   }
 });
-
